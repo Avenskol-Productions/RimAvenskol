@@ -29,7 +29,7 @@
       <ComponentIndustrial>1</ComponentIndustrial>
     </costList>
     <recipeMaker>
-      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <researchPrerequisite>RA_Dor_Firearms</researchPrerequisite>
       <skillRequirements>
         <Crafting>2</Crafting>
       </skillRequirements>
@@ -101,7 +101,7 @@
       <li>ShortShots</li>
     </weaponTags>
     <recipeMaker>
-      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <researchPrerequisite>RA_Dor_Firearms</researchPrerequisite>
       <skillRequirements>
         <Crafting>2</Crafting>
       </skillRequirements>
