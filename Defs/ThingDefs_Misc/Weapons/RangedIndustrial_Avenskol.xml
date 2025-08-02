@@ -4,7 +4,7 @@
 <!--Doratorian-->
 
   <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>Gun_Dor_AR_Anacal</defName>
+    <defName>Gun_RA_Dor_Anacal</defName>
     <label>anacal</label>
     <description>A basic Doratorian dual bolt action rifle only capable of holding two bullets. It bears a decent range, and is often used by Doratorian hunters.</description>
     <graphicData>
@@ -39,7 +39,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_Dor_AR_Anacal</defaultProjectile>
+        <defaultProjectile>Bullet_RA_Dor_Anacal</defaultProjectile>
 		<burstShotCount>2</burstShotCount>
         <warmupTime>0.85</warmupTime>
         <range>18.45</range>
@@ -69,7 +69,7 @@
     </tools>
   </ThingDef>
   <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_Dor_AR_Anacal</defName>
+    <defName>Bullet_RA_Dor_Anacal</defName>
     <label>anacal bullet</label>
     <projectile>
       <damageDef>Bullet</damageDef>
@@ -84,11 +84,95 @@
   </ThingDef>
 
   <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>Gun_Dor_AR_Rakchak</defName>
+    <defName>Gun_RA_Dor_Charak</defName>
+    <label>charak</label>
+    <description>A basic round mag loaded combat rifle with a reloading crank. It tends to be a bitch to reload, but has decent accuracy and range.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/AssaultRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>RA_Dor_Firearms</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <displayPriority>420</displayPriority>
+    </recipeMaker>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <WorkToMake>20000</WorkToMake>
+      <Mass>1.75</Mass>
+      <AccuracyTouch>1.00</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.50</AccuracyMedium>
+      <AccuracyLong>0.25</AccuracyLong>
+      <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>30</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_RA_Dor_Charak</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>15.45</range>
+        <burstShotCount>9</burstShotCount>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <soundCast>Shot_AssaultRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+      <li>AssaultRifle</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_RA_Dor_Charak</defName>
+    <label>charak bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>5</damageAmountBase>
+      <speed>60</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_RA_Dor_Rakchak</defName>
     <label>rakchak</label>
     <description>A basic Doratorian machine pistol. It excells at short-ranged, but tends to be a bitch to reload. It bears a top loaded cylinder mag, with a reloading crank.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/Dor_AR_Rakchak</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/AR_Dor_Rakchak</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <uiIconScale>1.4</uiIconScale>
@@ -124,11 +208,11 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_Dor_AR_Rakchak</defaultProjectile>
+        <defaultProjectile>Bullet_RA_Dor_Rakchak</defaultProjectile>
         <warmupTime>0.5</warmupTime>
         <range>20.0</range>
         <burstShotCount>9</burstShotCount>
-        <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
         <soundCast>Shot_MachinePistol</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -155,7 +239,7 @@
     </tools>
   </ThingDef>
   <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_Dor_AR_Rakchak</defName>
+    <defName>Bullet_RA_Dor_Rakchak</defName>
     <label>rakchak bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
