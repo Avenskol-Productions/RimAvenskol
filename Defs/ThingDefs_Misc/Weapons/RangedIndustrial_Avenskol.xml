@@ -4,8 +4,88 @@
 <!--Doratorian-->
 
   <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_Dor_AR_Anacal</defName>
+    <label>anacal</label>
+    <description>A basic Doratorian dual bolt action rifle only capable of holding two bullets. It bears a decent range, and is often used by Doratorian hunters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/BoltActionRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <weaponClasses>
+      <li>LongShots</li>
+    </weaponClasses>
+    <statBases>
+      <WorkToMake>6000</WorkToMake>
+      <Mass>1.75</Mass>
+      <AccuracyTouch>1.00</AccuracyTouch>
+      <AccuracyShort>0.90</AccuracyShort>
+      <AccuracyMedium>0.80</AccuracyMedium>
+      <AccuracyLong>0.70</AccuracyLong>
+      <RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>30</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>2</Crafting>
+      </skillRequirements>
+      <displayPriority>415</displayPriority>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Dor_AR_Anacal</defaultProjectile>
+		<burstShotCount>2</burstShotCount>
+        <warmupTime>0.85</warmupTime>
+        <range>18.45</range>
+        <soundCast>Shot_BoltActionRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Dor_AR_Anacal</defName>
+    <label>anacal bullet</label>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>9</damageAmountBase>
+      <stoppingPower>0.75</stoppingPower>
+      <speed>90</speed>
+    </projectile>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_Dor_AR_Rakchak</defName>
-    <label>rakchak pistol</label>
+    <label>rakchak</label>
     <description>A basic Doratorian machine pistol. It excells at short-ranged, but tends to be a bitch to reload. It bears a top loaded cylinder mag, with a reloading crank.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/Dor_AR_Rakchak</texPath>
