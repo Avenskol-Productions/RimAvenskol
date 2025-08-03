@@ -8,7 +8,7 @@
     <label>anacal</label>
     <description>A basic Doratorian dual bolt action rifle only capable of holding two bullets. It bears a decent range, and is often used by Doratorian hunters.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/BoltActionRifle</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/RA_Dor_Anacal</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
@@ -175,7 +175,7 @@
     <label>ariikla</label>
     <description>A mechanized shotgun with twin cylinders. It is lever action, and can handle most issues.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/ChainShotgun</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/RA_Dor_Ariikla</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>
@@ -264,7 +264,7 @@
     <label>charak</label>
     <description>A basic round mag loaded combat rifle with a reloading crank. It tends to be a bitch to reload, but has decent accuracy and range.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/AssaultRifle</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/RA_Dor_Charak</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
@@ -298,7 +298,7 @@
         <defaultProjectile>Bullet_RA_Dor_Charak</defaultProjectile>
         <warmupTime>0.5</warmupTime>
         <range>15.45</range>
-        <burstShotCount>9</burstShotCount>
+        <burstShotCount>10</burstShotCount>
         <ticksBetweenBurstShots>9</ticksBetweenBurstShots>
         <soundCast>Shot_AssaultRifle</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
@@ -387,7 +387,7 @@
         <defaultProjectile>Bullet_RA_Dor_Rakchak</defaultProjectile>
         <warmupTime>0.5</warmupTime>
         <range>20.0</range>
-        <burstShotCount>9</burstShotCount>
+        <burstShotCount>8</burstShotCount>
         <ticksBetweenBurstShots>9</ticksBetweenBurstShots>
         <soundCast>Shot_MachinePistol</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
