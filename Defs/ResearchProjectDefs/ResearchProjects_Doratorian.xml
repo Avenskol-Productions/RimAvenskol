@@ -3,6 +3,27 @@
 
 <!--Pre-Electricity-->
 
+  <ResearchProjectDef>
+    <defName>RA_Dor_Blades</defName>
+    <label>doratorian blades</label>
+    <description>Craft ceremonial Doratorian blades.</description>
+	<tab>RA_Doratorian</tab>
+    <baseCost>200</baseCost>
+    <techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>LongBlades</li>
+    </prerequisites>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>5.60</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->doratorian blades</li>
+        <li>subject_story->found themselves at the maw of a leiskwing, with only a blade to protect oneself</li>
+        <li>subject_gerund->crafting ceremonial weapons</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+
 <!--Electricity-->
 
   <ResearchProjectDef>

@@ -3,6 +3,8 @@
 
 <!--Doratorian-->
 
+<!--Rifle-->
+
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_RA_Dor_Anacal</defName>
     <label>anacal</label>
@@ -82,6 +84,8 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
   </ThingDef>
+
+<!--Revolver-->
 
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_RA_Dor_Ariemia</defName>
@@ -195,7 +199,7 @@
     <statBases>
       <WorkToMake>31000</WorkToMake>
       <Mass>4.5</Mass>
-      <AccuracyTouch>0.100</AccuracyTouch>
+      <AccuracyTouch>1.00</AccuracyTouch>
       <AccuracyShort>0.75</AccuracyShort>
       <AccuracyMedium>0.50</AccuracyMedium>
       <AccuracyLong>0.25</AccuracyLong>
@@ -258,6 +262,8 @@
       <speed>50</speed>
     </projectile>
   </ThingDef>
+
+<!--Combat Rifle-->
 
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_RA_Dor_Charak</defName>
@@ -342,6 +348,8 @@
       <speed>60</speed>
     </projectile>
   </ThingDef>
+
+<!--Machine Pistol-->
 
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_RA_Dor_Rakchak</defName>
