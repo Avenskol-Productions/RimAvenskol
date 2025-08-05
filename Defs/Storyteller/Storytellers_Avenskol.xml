@@ -193,7 +193,7 @@
   <StorytellerDef ParentName="BaseStoryteller">
     <defName>RA_Dor_Alirica</defName>
     <label>Alirica</label>
-    <description>Alirica is a kind and gentle voderai huntress who'd hardly harm anything unintentionally, prefering to forage for food. However of course as her name suggests when she is interested in a proper meal, she is prone to accidental consumption.</description>
+    <description>Alirica, the accidental huntress is a voderai known for her unfortunate habits. Being a cseiklasca, she is favourable to those whom strive for a more gentle challenge.</description>
     <portraitLarge>UI/HeroArt/Storytellers/RA_Dor_Alirica</portraitLarge>
     <portraitTiny>UI/HeroArt/Storytellers/RA_Dor_Alirica</portraitTiny>
     <listOrder>51</listOrder>

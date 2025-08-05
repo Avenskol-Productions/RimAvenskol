@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--Doratorian Any Pool-->
+
+  <ThingDef ParentName="EggUnfertBase">
+    <defName>Egg_RA_Dor_AP_AntemiliumUnfertilized</defName>
+    <label>antemilium egg (unfert.)</label>
+    <description>An unfertilized antemilium egg. It can be eaten raw, but it's much, much better cooked.</description>
+    <graphicData>
+      <color>(228,185,135)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.0</MarketValue>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>Egg_RA_Dor_AP_AntemiliumFertilized</defName>
+    <label>antemilium egg (fert.)</label>
+    <description>A fertilized antemilium egg. If all goes well, it should hatch into a chick. It can be eaten raw, but it's much better cooked.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <color>(245,245,245)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>3.5</hatcherDaystoHatch>
+        <hatcherPawn>RA_Dor_AP_Antemilium</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>
