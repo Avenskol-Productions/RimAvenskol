@@ -10,4 +10,13 @@
     <generalDescription>Doratorian research project catagories.</generalDescription>
   </ResearchTabDef>
 
+<!--The Veidancyri-->
+
+  <ResearchTabDef>
+    <defName>RA_Veidancyri</defName>
+    <label>Veidancyri</label>
+    <generalTitle>Veidancyri research projects</generalTitle>
+    <generalDescription>Examine the ancient equipment of the Veidancyri.</generalDescription>
+  </ResearchTabDef>
+
 </Defs>
