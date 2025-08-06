@@ -1,2 +1,6 @@
 D:\GOG Games\RimWorld\Mods\RimAvenskol\Source\RimAvenskol_SourceFiles\obj\Debug\RimAvenskol_Biomes.csproj.AssemblyReference.cache
 D:\GOG Games\RimWorld\Mods\RimAvenskol\Source\RimAvenskol_SourceFiles\obj\Debug\RimAvenskol_Biomes.csproj.CoreCompileInputs.cache
+D:\GOG Games\RimWorld\Mods\RimAvenskol\Source\RimAvenskol_SourceFiles\bin\Debug\RimAvenskol_Biomes.dll
+D:\GOG Games\RimWorld\Mods\RimAvenskol\Source\RimAvenskol_SourceFiles\bin\Debug\RimAvenskol_Biomes.pdb
+D:\GOG Games\RimWorld\Mods\RimAvenskol\Source\RimAvenskol_SourceFiles\obj\Debug\RimAvenskol_Biomes.dll
+D:\GOG Games\RimWorld\Mods\RimAvenskol\Source\RimAvenskol_SourceFiles\obj\Debug\RimAvenskol_Biomes.pdb

@@ -6,7 +6,6 @@ namespace RimWorld
     [DefOf]
     public static class BiomeDefOf
     {
-        // Token: 0x9991CEDE RID: 99991
-        public static BiomeDef Glowforest;
+        public static BiomeDef Biome_RA_Dor_ATB;
     }
 }
