@@ -1,0 +1,2 @@
+D:\GOG Games\RimWorld\Mods\RimAvenskol\Source\RimAvenskol_SourceFiles\obj\Debug\RimAvenskol_Biomes.csproj.AssemblyReference.cache
+D:\GOG Games\RimWorld\Mods\RimAvenskol\Source\RimAvenskol_SourceFiles\obj\Debug\RimAvenskol_Biomes.csproj.CoreCompileInputs.cache
