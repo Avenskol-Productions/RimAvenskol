@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--Royal Valence Reserve-->
+
+  <FactionDef ParentName="FactionBase" Name="RA_RVR_FactionBase" Abstract="True">
+    <pawnSingular>raviator</pawnSingular>
+    <pawnsPlural>raviators</pawnsPlural>
+    <categoryTag>RA_RVR</categoryTag>
+    <listOrderPriority>30</listOrderPriority>
+    <settlementGenerationWeight>1</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>President</leaderTitle>
+    <factionIconPath>World/WorldObjects/Expanding/RA_RVR_Icon</factionIconPath>
+    <techLevel>Industrial</techLevel>
+    <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+    <allowedCultures><li>Rustican</li></allowedCultures>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+    </disallowedMemes>
+    <structureMemeWeights>
+      <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
+    </structureMemeWeights>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Hussar MayRequire="Ludeon.RimWorld.Biotech">0.05</Hussar>
+      </xenotypeChances>
+    </xenotypeSet>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Outlander</li>
+        </categories>
+        <commonality>0.95</commonality>
+      </li>
+      <li>
+        <categories>
+          <li>Offworld</li>
+        </categories>
+        <commonality>0.05</commonality>
+      </li>
+    </backstoryFilters>
+    <caravanTraderKinds>
+      <li>Caravan_Outlander_BulkGoods</li>
+      <li>Caravan_Outlander_CombatSupplier</li>
+      <li>Caravan_Outlander_Exotic</li>
+      <li>Caravan_Outlander_PirateMerchant</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+      <li>Visitor_Outlander_Standard</li>
+    </visitorTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Outlander_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+    <raidLootMaker>OutlanderRaidLootMaker</raidLootMaker>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <!-- Normal fights, standard mix -->
+        <kindDef>Combat</kindDef>
+        <options>
+          <RA_RVR_Citizen>5</RA_RVR_Citizen>
+          <RA_RVR_Police>10</RA_RVR_Police>
+          <RA_RVR_Heavy>1.5</RA_RVR_Heavy>
+          <RA_RVR_Sniper>7</RA_RVR_Sniper>
+          <RA_RVR_Gunner>10</RA_RVR_Gunner>
+          <RA_RVR_Elite>10</RA_RVR_Elite>
+          <RA_RVR_General>1</RA_RVR_General>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <RA_RVR_Citizen>20</RA_RVR_Citizen>
+          <Villager_Child MayRequire="Ludeon.RimWorld.Biotech">10</Villager_Child>
+          <RA_RVR_Police>10</RA_RVR_Police>
+          <RA_RVR_Mayor>1</RA_RVR_Mayor>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <RA_RVR_Trader>1</RA_RVR_Trader>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+          <Dromedary>5</Dromedary>
+          <Alpaca>2</Alpaca>
+          <Elephant>1</Elephant>
+        </carriers>
+        <guards>
+          <RA_RVR_Citizen>3</RA_RVR_Citizen>
+          <RA_RVR_Police>10</RA_RVR_Police>
+          <RA_RVR_Heavy>1.5</RA_RVR_Heavy>
+          <RA_RVR_Sniper>7</RA_RVR_Sniper>
+          <RA_RVR_Gunner>10</RA_RVR_Gunner>
+          <RA_RVR_Elite>10</RA_RVR_Elite>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <RA_RVR_Citizen>10</RA_RVR_Citizen>
+          <RA_RVR_Police>10</RA_RVR_Police>
+          <RA_RVR_Heavy>1.5</RA_RVR_Heavy>
+          <RA_RVR_Sniper>7</RA_RVR_Sniper>
+          <RA_RVR_Gunner>10</RA_RVR_Gunner>
+          <RA_RVR_Elite>10</RA_RVR_Elite>
+          <RA_RVR_Mayor>1</RA_RVR_Mayor>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Miners</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Miner>1</Miner>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Hunters</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Hunter>1</Hunter>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Loggers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Logger>1</Logger>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Farmers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Farmer>1</Farmer>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+  </FactionDef>
+  <ThingSetMakerDef>
+    <defName>OutlanderRaidLootMaker</defName>
+    <root Class="ThingSetMaker_MarketValue">
+      <fixedParams>
+        <filter>
+          <thingDefs>
+            <li>Silver</li>
+            <li>MedicineIndustrial</li>
+            <li>ComponentIndustrial</li>
+            <li>MealSurvivalPack</li>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+      </fixedParams>
+    </root>
+  </ThingSetMakerDef>
+  <FactionDef ParentName="RA_RVR_FactionBase">
+    <defName>RA_RVR_Faction</defName>
+    <label>Royal Valence Reserve</label>
+    <description>The Royal Valence Reserve, on of several of humanity's final remnaining factions.\n\nThey are concerned with maintaining a military front, and ensuring the safety of their President.</description>
+    <colorSpectrum>
+      <li>(0.51, 0.47, 0.44)</li>
+    </colorSpectrum>
+    <classicIdeo>true</classicIdeo>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>10</configurationListOrderPriority>
+  </FactionDef>
+
+</Defs>
