@@ -15,7 +15,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <weaponClasses>
-      <li>RA_Dor_Sniper</li>
+      <li>Ranged</li>
+	  <li>RangedLight</li>
+	  <li>LongShots</li>
     </weaponClasses>
     <statBases>
       <WorkToMake>6000</WorkToMake>
@@ -108,11 +110,12 @@
       <RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
-      <li>SimpleGun</li>
-      <li>Revolver</li>
+      <li>RA_Dor_Revolver</li>
     </weaponTags>
     <weaponClasses>
-      <li>RA_Dor_Revolver</li>
+      <li>Ranged</li>
+	  <li>RangedLight</li>
+	  <li>ShortShots</li>
     </weaponClasses>
     <costList>
       <Steel>15</Steel>
@@ -184,7 +187,9 @@
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>
     <weaponClasses>
-      <li>RA_Dor_Shotgun</li>
+      <li>Ranged</li>
+	  <li>RangedLight</li>
+	  <li>ShortShots</li>
     </weaponClasses>
     <recipeMaker>
       <researchPrerequisite>RA_Dor_Firearms</researchPrerequisite>
@@ -224,8 +229,7 @@
       </li>
     </verbs>
     <weaponTags>
-      <li>IndustrialGunAdvanced</li>
-      <li>ShortShots</li>
+      <li>RA_Dor_Shotgun</li>
     </weaponTags>
     <tools>
       <li>
@@ -312,9 +316,13 @@
       </li>
     </verbs>
     <weaponTags>
-      <li>IndustrialGunAdvanced</li>
-      <li>AssaultRifle</li>
+      <li>RA_Dor_CombatRifle</li>
     </weaponTags>
+	<weaponClasses>
+      <li>Ranged</li>
+	  <li>RangedLight</li>
+	  <li>LongShots</li>
+    </weaponClasses>
     <tools>
       <li>
         <label>stock</label>
@@ -362,10 +370,12 @@
     <uiIconScale>1.4</uiIconScale>
     <soundInteract>Interact_SMG</soundInteract>
     <weaponClasses>
-      <li>RA_Dor_MP</li>
+      <li>Ranged</li>
+	  <li>RangedLight</li>
+	  <li>ShortShots</li>
     </weaponClasses>
     <weaponTags>
-      <li>ShortShots</li>
+      <li>RA_Dor_MP</li>
     </weaponTags>
     <recipeMaker>
       <researchPrerequisite>RA_Dor_Firearms</researchPrerequisite>
