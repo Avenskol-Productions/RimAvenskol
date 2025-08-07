@@ -15,7 +15,7 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <weaponClasses>
-      <li>LongShots</li>
+      <li>RA_Dor_Sniper</li>
     </weaponClasses>
     <statBases>
       <WorkToMake>6000</WorkToMake>
@@ -112,7 +112,7 @@
       <li>Revolver</li>
     </weaponTags>
     <weaponClasses>
-      <li>RangedLight</li>
+      <li>RA_Dor_Revolver</li>
     </weaponClasses>
     <costList>
       <Steel>15</Steel>
@@ -184,7 +184,7 @@
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>
     <weaponClasses>
-      <li>ShortShots</li>
+      <li>RA_Dor_Shotgun</li>
     </weaponClasses>
     <recipeMaker>
       <researchPrerequisite>RA_Dor_Firearms</researchPrerequisite>
@@ -362,8 +362,7 @@
     <uiIconScale>1.4</uiIconScale>
     <soundInteract>Interact_SMG</soundInteract>
     <weaponClasses>
-      <li>RangedLight</li>
-      <li>ShortShots</li>
+      <li>RA_Dor_MP</li>
     </weaponClasses>
     <weaponTags>
       <li>ShortShots</li>

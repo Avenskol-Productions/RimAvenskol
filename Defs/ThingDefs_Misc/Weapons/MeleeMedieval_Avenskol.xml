@@ -16,8 +16,7 @@
     </graphicData>
     <techLevel>Medieval</techLevel>
     <weaponTags>
-      <li>MedievalMeleeAdvanced</li>
-      <li>LongSword</li>
+      <li>RA_Dor_Melee</li>
     </weaponTags>
     <costStuffCount>50</costStuffCount>
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
@@ -81,8 +80,8 @@
     </graphicData>
     <techLevel>Medieval</techLevel>
     <weaponTags>
-      <li>MedievalMeleeAdvanced</li>
-      <li>LongSword</li>
+      <li>RA_Dor_Melee</li>
+      <li>RA_Veidancyri_Melee</li>
     </weaponTags>
     <costStuffCount>100</costStuffCount>
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
