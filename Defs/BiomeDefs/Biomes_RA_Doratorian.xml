@@ -5,7 +5,7 @@
     <defName>Biome_RA_Dor_ATB</defName>
     <label>temperate open broadleaf</label>
     <description>Open clearings of fine broadleaf, home to a diverse variety of life. Compared to generic broadleaf biomes, these span across plains and forests both.</description>
-    <workerClass>BiomeWorker_Biome_RA_Dor_ATB</workerClass>
+    <!--<workerClass>BiomeWorker_Biome_RA_Dor_ATB</workerClass>-->
     <animalDensity>3.7</animalDensity>
     <plantDensity>0.65</plantDensity>
     <settlementSelectionWeight>1</settlementSelectionWeight>
