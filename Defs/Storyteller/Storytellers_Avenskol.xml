@@ -47,7 +47,7 @@
         <acceptPercentFactorPerThreatPointsCurve>
           <points>
             <li>(800, 1)</li>
-            <li>(2800, 0)</li>
+            <li>(10000, 0)</li>
           </points>
         </acceptPercentFactorPerThreatPointsCurve>
       </li>
@@ -374,7 +374,7 @@
         <acceptPercentFactorPerThreatPointsCurve>
           <points>
             <li>(250, 1)</li>
-            <li>(500, 0)</li>
+            <li>(100000, 0)</li>
           </points>
         </acceptPercentFactorPerThreatPointsCurve>
       </li>
