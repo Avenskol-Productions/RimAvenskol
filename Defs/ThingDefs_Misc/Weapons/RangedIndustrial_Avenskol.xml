@@ -8,7 +8,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_RA_Dor_Anacal</defName>
     <label>anacal</label>
-    <description>A basic Doratorian dual bolt action rifle only capable of holding two bullets. It bears a decent range, and is often used by Doratorian hunters.</description>
+    <description>A rotary loader bearing forth from the side. A slot in stock feeds the feeder.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/RA_Dor_Anacal</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -357,6 +357,95 @@
       <damageDef>Bullet</damageDef>
       <damageAmountBase>5</damageAmountBase>
       <speed>60</speed>
+    </projectile>
+  </ThingDef>
+
+  <!--Light Machine Gun-->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_RA_Dor_Rakchak</defName>
+    <label>rakchak</label>
+    <description>A rotary drum linked upon the side as ammo wraps throughout. Dual barrels are linked to each feeder.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/LMG</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <recipeMaker>
+      <researchPrerequisite>RA_Dor_Firearms</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+      <displayPriority>445</displayPriority>
+    </recipeMaker>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <WorkToMake>17000</WorkToMake>
+      <Mass>17</Mass>
+      <AccuracyTouch>0.86</AccuracyTouch>
+      <AccuracyShort>0.57</AccuracyShort>
+      <AccuracyMedium>0.38</AccuracyMedium>
+      <AccuracyLong>0.25</AccuracyLong>
+      <RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>36</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_RA_Dor_Rakchak</defaultProjectile>
+        <warmupTime>0.9</warmupTime>
+        <range>51.8</range>
+        <ticksBetweenBurstShots>3.5</ticksBetweenBurstShots>
+        <burstShotCount>24</burstShotCount>
+        <soundCast>Shot_Minigun</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>18</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>RA_Dor_LMG</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_RA_Dor_Rakchak</defName>
+    <label>LMG bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>6</damageAmountBase>
+      <stoppingPower>2</stoppingPower>
+      <speed>54</speed>
     </projectile>
   </ThingDef>
 

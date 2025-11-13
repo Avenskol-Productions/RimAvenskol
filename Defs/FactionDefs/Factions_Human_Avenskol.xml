@@ -173,7 +173,7 @@
   <FactionDef ParentName="RA_RVR_FactionBase">
     <defName>RA_RVR_Faction</defName>
     <label>Royal Valence Reserve</label>
-    <description>The Royal Valence Reserve, on of several of humanity's final remnaining factions.\n\nThey are concerned with maintaining a military front, and ensuring the safety of their President.</description>
+    <description>The Royal Valence Reserve, one of several of humanity's final remnaining factions.\n\nThey are concerned with maintaining a military front, and ensuring the safety of their President.</description>
     <colorSpectrum>
       <li>(0.51, 0.47, 0.44)</li>
     </colorSpectrum>
