@@ -8,7 +8,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_RA_Dor_Anacal</defName>
     <label>anacal</label>
-    <description>A basic Doratorian dual bolt action rifle only capable of holding two bullets. It bears a decent range, and is often used by Doratorian hunters.</description>
+    <description>A rotary loader bearing forth from the side. A slot in stock feeds the feeder.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/RA_Dor_Anacal</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -88,6 +88,95 @@
       <texPath>Things/Projectile/Bullet_big</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_RA_Dor_Anaskit</defName>
+    <label>anaskit</label>
+    <description>Stock fed and twin barreled. Twin shots radiate through the chamber.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/SniperRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>RA_Dor_Firearms</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+      <displayPriority>421</displayPriority>
+    </recipeMaker>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <WorkToMake>40000</WorkToMake>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.86</AccuracyTouch>
+      <AccuracyShort>0.57</AccuracyShort>
+      <AccuracyMedium>0.38</AccuracyMedium>
+      <AccuracyLong>0.25</AccuracyLong>
+      <RangedWeapon_Cooldown>1.70</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>30</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_RA_Dor_Anaskit</defaultProjectile>
+        <warmupTime>4.5</warmupTime>
+        <range>75.8</range>
+        <burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <soundCast>Shot_AssaultRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>18</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>RA_Dor_Rifle</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Ranged</li>
+	  <li>RangedLight</li>
+	  <li>LongShots</li>
+    </weaponClasses>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_RA_Dor_Anaskit</defName>
+    <label>anaskit bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>36</damageAmountBase>
+      <stoppingPower>1.5</stoppingPower>
+      <speed>170</speed>
+    </projectile>
   </ThingDef>
 
 <!--Revolver-->
@@ -180,6 +269,8 @@
     </projectile>
   </ThingDef>
 
+  <!--Shotgun-->
+
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_RA_Dor_Ariikla</defName>
     <label>ariikla</label>
@@ -270,7 +361,181 @@
     </projectile>
   </ThingDef>
 
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_RA_Dor_Dakrana</defName>
+    <label>dakrana</label>
+    <description>Twin barrels and rotary mags chamber in metalic song. Links and straps bear an extended chain.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Shotgun</soundInteract>
+    <weaponClasses>
+      <li>ShortShots</li>
+    </weaponClasses>
+    <weaponTags>
+      <li>RA_Dor_Shotgun</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>6000</WorkToMake>
+      <Mass>1.7</Mass>
+      <AccuracyTouch>1.00</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.50</AccuracyMedium>
+      <AccuracyLong>0.25</AccuracyLong>
+      <RangedWeapon_Cooldown>2.50</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>30</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>RA_Dor_Firearms</researchPrerequisite>
+	  <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <displayPriority>430</displayPriority>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_RA_Dor_Dakrana</defaultProjectile>
+        <warmupTime>1.8</warmupTime>
+        <range>31.8</range>
+        <burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+        <soundCast>Shot_Shotgun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>18</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_RA_Dor_Dakrana</defName>
+    <label>shotgun blast</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>36</damageAmountBase>
+      <stoppingPower>12</stoppingPower>
+      <armorPenetrationBase>2.8</armorPenetrationBase>
+      <speed>50</speed>
+    </projectile>
+  </ThingDef>
+
 <!--Combat Rifle-->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_RA_Dor_Axdamios</defName>
+    <label>axdamios</label>
+    <description>Twin barrels racket upon a sounding blast. Rotary coils link upon a twin chamber.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/AssaultRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>RA_Dor_Firearms</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+      <displayPriority>422</displayPriority>
+    </recipeMaker>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <WorkToMake>20000</WorkToMake>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>1.00</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.50</AccuracyMedium>
+      <AccuracyLong>0.25</AccuracyLong>
+      <RangedWeapon_Cooldown>3.6</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>9</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_RA_Dor_Axdamios</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>46.35</range>
+        <burstShotCount>9</burstShotCount>
+        <ticksBetweenBurstShots>3.6</ticksBetweenBurstShots>
+        <soundCast>Shot_AssaultRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>27</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>RA_Dor_CombatRifle</li>
+    </weaponTags>
+	<weaponClasses>
+      <li>Ranged</li>
+	  <li>RangedLight</li>
+	  <li>LongShots</li>
+    </weaponClasses>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_RA_Dor_Axdamios</defName>
+    <label>rifle round</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+      <speed>180</speed>
+    </projectile>
+  </ThingDef>
 
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_RA_Dor_Charak</defName>
@@ -360,14 +625,103 @@
     </projectile>
   </ThingDef>
 
-<!--Machine Pistol-->
+  <!--Light Machine Gun-->
 
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_RA_Dor_Rakchak</defName>
     <label>rakchak</label>
-    <description>A basic Doratorian machine pistol. It excells at short-ranged, but tends to be a bitch to reload. It bears a top loaded cylinder mag, with a reloading crank.</description>
+    <description>A rotary drum linked upon the side as ammo wraps throughout. Dual barrels are linked to each feeder.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/RA_Dor_Rakchak</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/LMG</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <recipeMaker>
+      <researchPrerequisite>RA_Dor_Firearms</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+      <displayPriority>445</displayPriority>
+    </recipeMaker>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <WorkToMake>17000</WorkToMake>
+      <Mass>17</Mass>
+      <AccuracyTouch>0.86</AccuracyTouch>
+      <AccuracyShort>0.57</AccuracyShort>
+      <AccuracyMedium>0.38</AccuracyMedium>
+      <AccuracyLong>0.25</AccuracyLong>
+      <RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>36</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_RA_Dor_Rakchak</defaultProjectile>
+        <warmupTime>0.9</warmupTime>
+        <range>51.8</range>
+        <ticksBetweenBurstShots>3.5</ticksBetweenBurstShots>
+        <burstShotCount>24</burstShotCount>
+        <soundCast>Shot_Minigun</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>18</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>RA_Dor_LMG</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_RA_Dor_Rakchak</defName>
+    <label>LMG bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>6</damageAmountBase>
+      <stoppingPower>2</stoppingPower>
+      <speed>54</speed>
+    </projectile>
+  </ThingDef>
+
+<!--Machine Pistol-->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_RA_Dor_Riamdati</defName>
+    <label>riamdati</label>
+    <description>Twin barrels fed by a chamber of 10. A rotary lock vibrates the feeder.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/RA_Dor_Riamdati</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <uiIconScale>1.4</uiIconScale>
@@ -404,12 +758,98 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_RA_Dor_Rakchak</defaultProjectile>
+        <defaultProjectile>Bullet_RA_Dor_Riamdati</defaultProjectile>
         <warmupTime>0.5</warmupTime>
         <range>20.0</range>
-        <burstShotCount>8</burstShotCount>
-        <ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+        <burstShotCount>10</burstShotCount>
+        <ticksBetweenBurstShots>11</ticksBetweenBurstShots>
         <soundCast>Shot_MachinePistol</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>11</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_RA_Dor_Riamdati</defName>
+    <label>pistol round</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>3</damageAmountBase>
+      <speed>75</speed>
+    </projectile>
+  </ThingDef>
+
+  <!--Pistol-->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_RA_Dor_Akamerna</defName>
+    <label>akamerna</label>
+    <description>Suited rotary chambers breed the feeder. Lock and metal springs forth a sounding ring.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Autopistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.5</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>RA_Dor_Firearms</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <displayPriority>405</displayPriority>
+    </recipeMaker>
+    <weaponTags>
+      <li>RA_Dor_P</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <statBases>
+      <WorkToMake>2500</WorkToMake>
+      <Mass>2.4</Mass>
+      <AccuracyTouch>1.00</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.50</AccuracyMedium>
+      <AccuracyLong>0.25</AccuracyLong>
+      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>15</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_RA_Dor_Akamerna</defaultProjectile>
+        <warmupTime>0.6</warmupTime>
+        <range>12.9</range>
+        <burstShotCount>5</burstShotCount>
+		<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+        <soundCast>Shot_Autopistol</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
@@ -435,16 +875,16 @@
     </tools>
   </ThingDef>
   <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_RA_Dor_Rakchak</defName>
-    <label>pistol round</label>
+    <defName>Bullet_RA_Dor_Akamerna</defName>
+    <label>autopistol bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>3</damageAmountBase>
-      <speed>75</speed>
+      <damageAmountBase>5</damageAmountBase>
+      <speed>56</speed>
     </projectile>
   </ThingDef>
 
