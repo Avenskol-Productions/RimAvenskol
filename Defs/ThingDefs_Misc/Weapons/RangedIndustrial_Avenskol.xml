@@ -363,11 +363,11 @@
 <!--Machine Pistol-->
 
   <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>Gun_RA_Dor_Rakchak</defName>
-    <label>rakchak</label>
-    <description>A basic Doratorian machine pistol. It excells at short-ranged, but tends to be a bitch to reload. It bears a top loaded cylinder mag, with a reloading crank.</description>
+    <defName>Gun_RA_Dor_Riamdati</defName>
+    <label>riamdati</label>
+    <description>Twin barrels fed by a chamber of 10. A rotary lock vibrates the feeder.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/RA_Dor_Rakchak</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/RA_Dor_Riamdati</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <uiIconScale>1.4</uiIconScale>
@@ -404,14 +404,14 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_RA_Dor_Rakchak</defaultProjectile>
+        <defaultProjectile>Bullet_RA_Dor_Riamdati</defaultProjectile>
         <warmupTime>0.5</warmupTime>
         <range>20.0</range>
-        <burstShotCount>8</burstShotCount>
-        <ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+        <burstShotCount>10</burstShotCount>
+        <ticksBetweenBurstShots>11</ticksBetweenBurstShots>
         <soundCast>Shot_MachinePistol</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
+        <muzzleFlashScale>11</muzzleFlashScale>
       </li>
     </verbs>
     <tools>
@@ -435,7 +435,7 @@
     </tools>
   </ThingDef>
   <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_RA_Dor_Rakchak</defName>
+    <defName>Bullet_RA_Dor_Riamdati</defName>
     <label>pistol round</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
