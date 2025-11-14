@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<KCSG.SettlementLayoutDef>
+		<defName>RA_KalavylianBase</defName>
+		<settlementSize>85,85</settlementSize>
+		<avoidBridgeable>true</avoidBridgeable>
+		<avoidMountains>true</avoidMountains>
+		<centerBuildings>
+			<centerSize>39,39</centerSize>
+			<spaceAround>10</spaceAround>
+			<forceClean>true</forceClean>
+			<allowedStructures>
+				<li>
+					<count>1~1</count>
+					<tag>RA_Kalavylian_Barracks</tag>
+				</li>
+			</allowedStructures>
+			<centralBuildingTags>
+        <li>RA_Kalavylian_Barracks</li>
+      </centralBuildingTags>
+		</centerBuildings>
+		<peripheralBuildings>
+			<allowedStructures>
+				<li>
+					<count>12~12</count>
+					<tag>RA_Kalavylian_Barracks</tag>
+				</li>
+			</allowedStructures>
+		</peripheralBuildings>
+	</KCSG.SettlementLayoutDef>
+</Defs>
