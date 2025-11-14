@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+<KCSG.StructureLayoutDef>
+  <defName>RA_Kalavylian_Barracks_A</defName>
+  <spawnConduits>false</spawnConduits>
+  <layouts>
+    <li>
+      <li>.,Wall_WoodLog,Wall_WoodLog,Door_WoodLog,Wall_WoodLog,Wall_WoodLog,.</li>
+      <li>Wall_WoodLog,Wall_WoodLog,.,.,.,Wall_WoodLog,Wall_WoodLog</li>
+      <li>Wall_WoodLog,Bed_WoodLog_East,.,.,.,Bed_WoodLog_West,Wall_WoodLog</li>
+      <li>Wall_WoodLog,EndTable_WoodLog_East,.,Campfire_North,.,EndTable_WoodLog_West,Wall_WoodLog</li>
+      <li>Wall_WoodLog,Bed_WoodLog_East,.,.,.,Bed_WoodLog_West,Wall_WoodLog</li>
+      <li>Wall_WoodLog,Wall_WoodLog,.,.,.,Wall_WoodLog,Wall_WoodLog</li>
+      <li>.,Wall_WoodLog,Wall_WoodLog,Door_WoodLog,Wall_WoodLog,Wall_WoodLog,.</li>
+    </li>
+  </layouts>
+  <roofGrid>
+    <li>.,1,1,1,1,1,.</li>
+    <li>1,1,1,1,1,1,1</li>
+    <li>1,1,1,1,1,1,1</li>
+    <li>1,1,1,1,1,1,1</li>
+    <li>1,1,1,1,1,1,1</li>
+    <li>1,1,1,1,1,1,1</li>
+    <li>.,1,1,1,1,1,.</li>
+  </roofGrid>
+  <terrainGrid>
+    <li>.,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,.</li>
+    <li>WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor</li>
+    <li>WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor</li>
+    <li>WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor</li>
+    <li>WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor</li>
+    <li>WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor</li>
+    <li>.,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,.</li>
+  </terrainGrid>
+  <forceGenerateRoof>true</forceGenerateRoof>
+	<modRequirements>
+		<li>AvenskolProductions.RimAvenskol</li>
+	</modRequirements>
+	<tags>
+		<li>RA_Kalavylian_Barracks</li>
+	</tags>
+</KCSG.StructureLayoutDef>
+<KCSG.StructureLayoutDef>
+  <defName>RA_Kalavylian_Barracks_B</defName>
+  <spawnConduits>false</spawnConduits>
+  <layouts>
+    <li>
+      <li>.,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,.</li>
+      <li>Wall_WoodLog,Wall_WoodLog,Bed_WoodLog_North,EndTable_WoodLog_North,Bed_WoodLog_North,Wall_WoodLog,Wall_WoodLog</li>
+      <li>Wall_WoodLog,.,.,.,.,.,Wall_WoodLog</li>
+      <li>Door_WoodLog,.,.,Campfire_East,.,.,Door_WoodLog</li>
+      <li>Wall_WoodLog,.,.,.,.,.,Wall_WoodLog</li>
+      <li>Wall_WoodLog,Wall_WoodLog,Bed_WoodLog_South,EndTable_WoodLog_South,Bed_WoodLog_South,Wall_WoodLog,Wall_WoodLog</li>
+      <li>.,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,.</li>
+    </li>
+  </layouts>
+  <roofGrid>
+    <li>.,1,1,1,1,1,.</li>
+    <li>1,1,1,1,1,1,1</li>
+    <li>1,1,1,1,1,1,1</li>
+    <li>1,1,1,1,1,1,1</li>
+    <li>1,1,1,1,1,1,1</li>
+    <li>1,1,1,1,1,1,1</li>
+    <li>.,1,1,1,1,1,.</li>
+  </roofGrid>
+  <terrainGrid>
+    <li>.,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,.</li>
+    <li>WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor</li>
+    <li>WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor</li>
+    <li>WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor</li>
+    <li>WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor</li>
+    <li>WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor</li>
+    <li>.,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,WoodPlankFloor,.</li>
+  </terrainGrid>
+  <forceGenerateRoof>true</forceGenerateRoof>
+	<modRequirements>
+		<li>AvenskolProductions.RimAvenskol</li>
+	</modRequirements>
+	<tags>
+		<li>RA_Kalavylian_Barracks</li>
+	</tags>
+</KCSG.StructureLayoutDef>
+</Defs>
