@@ -4,15 +4,10 @@
 	<ScenarioDef Name="Council Start">
 		<defName>RA_Syrnl_Council_Start</defName>
 		<label>Council Start</label>
-<<<<<<< Updated upstream
-		<description>You choose between three of eight syrenalians each of whom have been chosen to found a new hegemon.</description>
-		<scenario>
-		<summary>Three syrenals whom have arrived to a new distant world have come to found a new hegemon.</summary>
-=======
+		<summary>Seven syrenals whom have arrived to a new distant world have come to found a new hegemon.</summary>
 		<description>You choose between seven of fourteen syrenalians each of whom have been chosen to found a new hegemon.</description>
 		<scenario>
 		<summary>Seven syrenals whom have arrived to a new distant world have come to found a new hegemon.</summary>
->>>>>>> Stashed changes
 		<playerFaction>
 			<def>PlayerFaction</def>
 			<factionDef>RA_Syrenalian_Player</factionDef>
@@ -45,8 +40,13 @@
 			<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
 				<def>ConfigPage_ConfigureStartingPawns</def>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 				<pawnChoiceCount>8</pawnChoiceCount>
 				<pawnCount>3</pawnCount>
+=======
+				<pawnChoiceCount>14</pawnChoiceCount>
+				<pawnCount>7</pawnCount>
+>>>>>>> Stashed changes
 =======
 				<pawnChoiceCount>14</pawnChoiceCount>
 				<pawnCount>7</pawnCount>
