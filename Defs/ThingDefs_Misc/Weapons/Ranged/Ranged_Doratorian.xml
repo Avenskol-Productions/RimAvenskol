@@ -1,28 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<!--Azkuvalian-->
-
-  <!--Bolter-->
-
-  <!--Combat Rifle-->
-
-  <!--Light Machine Gun-->
-
-  <!--Machine Pistol-->
-
-  <!--Pistol-->
-
-  <!--Plasma Launcher-->
-
-  <!--Rifle-->
-
-  <!--Rocket Launcher-->
-
-  <!--Sub Machine Gun-->
-
-  <!--Shotgun-->
-
 <!--Doratorian-->
 
   <!--Combat Rifle-->
@@ -909,45 +887,5 @@
       <speed>50</speed>
     </projectile>
   </ThingDef>
-
-<!--Dasdarfoxan-->
-
-  <!--Combat Rifle-->
-
-  <!--Light Machine Gun-->
-
-  <!--Machine Pistol-->
-
-  <!--Pistol-->
-
-  <!--Rifle-->
-
-  <!--Rocket Launcher-->
-
-  <!--Sub Machine Gun-->
-
-  <!--Shotgun-->
-
-<!--Syrenalian-->
-
-  <!--Bolter-->
-
-  <!--Combat Rifle-->
-
-  <!--Light Machine Gun-->
-
-  <!--Machine Pistol-->
-
-  <!--Pistol-->
-
-  <!--Plasma Launcher-->
-
-  <!--Rifle-->
-
-  <!--Rocket Launcher-->
-
-  <!--Sub Machine Gun-->
-
-  <!--Shotgun-->
 
 </Defs>
