@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+<AlienRace.RaceSettings>
+		<defName>RA_Syrenal_Race_Settings</defName>
+		<pawnKindSettings>
+		<startingColonists>
+			<li>
+				<pawnKindEntries>
+					<li>
+						<kindDefs>
+							<li>RA_Syrenalian_Colonist</li>
+						</kindDefs>
+						<chance>100.0</chance>
+					</li>
+					<li>
+						<kindDefs>
+							<li>RA_Syrenalian_Colonist_Dark</li>
+							<li>RA_Syrenalian_Colonist_Talvix</li>
+						</kindDefs>
+						<chance>50.0</chance>
+					</li>
+		</pawnKindEntries>
+		<factionDefs>
+			<li>RA_Syrenalian_Player</li> 
+		</factionDefs>
+		</li>
+	</startingColonists>
+	</pawnKindSettings>
+</AlienRace.RaceSettings>
+
+</Defs>

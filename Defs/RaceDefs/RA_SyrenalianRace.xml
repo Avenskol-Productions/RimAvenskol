@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <AlienRace.ThingDef_AlienRace ParentName="Human">
+        <defName>RA_Base_Syrenal</defName>
+        <label>syrenal</label>
+        <description>The base for Syrenalians</description>
+        <alienRace>
+            <generalSettings></generalSettings>
+            <graphicPaths></graphicPaths>
+            <styleSettings></styleSettings>
+            <thoughtSettings></thoughtSettings>
+            <relationSettings></relationSettings>
+            <raceRestriction></raceRestriction>
+            <compatibility></compatibility>
+        </alienRace>
+    </AlienRace.ThingDef_AlienRace>
+</Defs>
