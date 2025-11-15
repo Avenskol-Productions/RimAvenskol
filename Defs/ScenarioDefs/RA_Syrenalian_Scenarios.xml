@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ScenarioDef Name="Council Start">
+		<defName>RA_Syrnl_Council_Start</defName>
+		<label>Council Start</label>
+		<summary>Seven syrenals whom have arrived to a new distant world have come to found a new hegemon.</summary>
+		<description>You choose between seven of fourteen syrenalians each of whom have been chosen to found a new hegemon.</description>
+		<scenario>
+		<summary>Seven syrenals whom have arrived to a new distant world have come to found a new hegemon.</summary>
+		<playerFaction>
+			<def>PlayerFaction</def>
+			<factionDef>RA_Syrenalian_Player</factionDef>
+		</playerFaction>
+		<surfaceLayer>
+			<def>SurfaceLayerFixed</def>
+			<tag>Surface</tag>
+			<layer>Surface</layer>
+			<settingsDef>Surface</settingsDef>
+			<hide>true</hide>
+			<connections>
+				<Orbit MayRequire="Ludeon.RimWorld.Odyssey">
+					<zoomMode>ZoomOut</zoomMode>
+				</Orbit>
+			</connections>
+		</surfaceLayer>
+		<parts>
+			<li MayRequire="Ludeon.RimWorld.Odyssey" Class="ScenPart_PlanetLayer">
+				<def>PlanetLayer</def>
+				<tag>Orbit</tag>
+				<layer>Orbit</layer>
+				<settingsDef>Orbit</settingsDef>
+				<hide>true</hide>
+				<connections>
+					<Surface>
+						<zoomMode>ZoomIn</zoomMode>
+					</Surface>
+				</connections>
+			</li>
+			<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+				<def>ConfigPage_ConfigureStartingPawns</def>
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+				<pawnChoiceCount>8</pawnChoiceCount>
+				<pawnCount>3</pawnCount>
+=======
+				<pawnChoiceCount>14</pawnChoiceCount>
+				<pawnCount>7</pawnCount>
+>>>>>>> Stashed changes
+=======
+				<pawnChoiceCount>14</pawnChoiceCount>
+				<pawnCount>7</pawnCount>
+>>>>>>> Stashed changes
+			</li>
+			<li Class="ScenPart_PlayerPawnsArriveMethod">
+				<def>PlayerPawnsArriveMethod</def>
+				<method>DropPods</method>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Silver</thingDef>
+				<count>800</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>MealSurvivalPack</thingDef>
+				<count>50</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>MedicineIndustrial</thingDef>
+				<count>30</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>ComponentIndustrial</thingDef>
+				<count>30</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Gun_RA_Dor_Anacal</thingDef>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Gun_RA_Dor_Ariemia</thingDef>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>MeleeWeapon_Knife</thingDef>
+				<stuff>Plasteel</stuff>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Apparel_FlakPants</thingDef>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Apparel_FlakVest</thingDef>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Apparel_AdvancedHelmet</thingDef>
+				<stuff>Plasteel</stuff>
+			</li>
+			<li Class="ScenPart_StartingAnimal">
+				<def>StartingAnimal</def>
+				<count>1</count>
+				<bondToRandomPlayerPawnChance>1</bondToRandomPlayerPawnChance>
+			</li>
+			<li Class="ScenPart_ScatterThingsNearPlayerStart">
+				<def>ScatterThingsNearPlayerStart</def>
+				<thingDef>Steel</thingDef>
+				<count>450</count>
+				<allowRoofed>True</allowRoofed>
+			</li>
+			<li Class="ScenPart_ScatterThingsNearPlayerStart">
+				<def>ScatterThingsNearPlayerStart</def>
+				<thingDef>WoodLog</thingDef>
+				<count>300</count>
+				<allowRoofed>True</allowRoofed>
+			</li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>ShipChunk</thingDef>
+				<count>3</count>
+			</li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>Steel</thingDef>
+				<count>720</count>
+				<allowRoofed>True</allowRoofed>
+			</li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>MealSurvivalPack</thingDef>
+				<count>7</count>
+				<allowRoofed>True</allowRoofed>
+			</li>
+			<li Class="ScenPart_GameStartDialog">
+				<def>GameStartDialog</def>
+				<text>You have been chosen by the High Council to found a new hegemon on a distant world.</text>
+				<textKey>GameStartDialog</textKey>
+				<closeSound>GameStartSting</closeSound>
+			</li>
+		</parts>
+		</scenario>
+	</ScenarioDef>
+</Defs>
