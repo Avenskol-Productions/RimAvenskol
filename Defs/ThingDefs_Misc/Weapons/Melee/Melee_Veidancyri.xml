@@ -1,28 +1,29 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<!--Doratorian-->
+<!--The Veidancyri-->
 
 <!--Curved Blade-->
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-    <defName>MeleeWeapon_RA_Dor_Akzemia</defName>
-    <label>akzemia</label>
-    <description>An archaic blade favoured by Doratorians even to modern day. They are curved at the tip, and can handle more than a fair share of opponents within a trained hand.</description>
+    <defName>MeleeWeapon_RA_Dor_Pakseakz</defName>
+    <label>Pakseakz</label>
+    <description>The signature blade of The Veidancyri. They are ideal for trained combat.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponMelee/RA_Dor_Akzemia</texPath>
+      <texPath>Things/Item/Equipment/WeaponMelee/RA_Dor_Pakseakz</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <techLevel>Medieval</techLevel>
     <weaponTags>
       <li>RA_Dor_Melee</li>
+      <li>RA_Veidancyri_Melee</li>
     </weaponTags>
-    <costStuffCount>50</costStuffCount>
+    <costStuffCount>70</costStuffCount>
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
-      <WorkToMake>9000</WorkToMake>
-      <Mass>1</Mass>
+      <WorkToMake>135000</WorkToMake>
+      <Mass>1.5</Mass>
     </statBases>
     <relicChance>2</relicChance>
     <equippedAngleOffset>-65</equippedAngleOffset>
@@ -36,38 +37,34 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>6</power>
-        <cooldownTime>1.45</cooldownTime>
+        <power>9</power>
+        <cooldownTime>1.57</cooldownTime>
       </li>
       <li>
         <label>point</label>
         <capacities>
           <li>Stab</li>
         </capacities>
-        <power>9</power>
-        <cooldownTime>1.3</cooldownTime>
+        <power>13</power>
+        <cooldownTime>1.42</cooldownTime>
       </li>
       <li>
         <label>edge</label>
         <capacities>
           <li>Cut</li>
         </capacities>
-        <power>11</power>
-        <cooldownTime>1.25</cooldownTime>
+        <power>16</power>
+        <cooldownTime>1.37</cooldownTime>
       </li>
     </tools>
     <recipeMaker>
-      <researchPrerequisite>RA_Dor_Blades</researchPrerequisite>
+      <researchPrerequisite>RA_Veidancyri_Weapons</researchPrerequisite>
       <skillRequirements>
-        <Crafting>3</Crafting>
+        <Crafting>4</Crafting>
       </skillRequirements>
       <displayPriority>420</displayPriority>
     </recipeMaker>
   </ThingDef>
-
-<!--The Veidancyri-->
-
-<!--Curved Blade-->
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>MeleeWeapon_RA_Dor_Pakseakz</defName>
