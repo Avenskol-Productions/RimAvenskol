@@ -82,7 +82,7 @@
         </capacities>
         <power>4.1</power>
         <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
         <chanceFactor>0.07</chanceFactor>
       </li>
       <li>
@@ -98,6 +98,72 @@
       </li>
     </tools>
     <race>
+	    <alienRace IgnoreIfNoMatchingField="True">
+                <generalSettings>
+                    <allowHumanBios>true</allowHumanBios>
+                    <corpseCategory>CorpsesHumanlike</corpseCategory>
+                </generalSettings>
+				<alienPartGenerator>
+                        <headTypes>
+                            <li>Male_AverageNormal</li>
+                            <li>Male_AverageWide</li>
+                            <li>Male_AveragePointy</li>
+                            <li>Male_NarrowNormal</li>
+                            <li>Male_NarrowPointy</li>
+                            <li>Male_NarrowWide</li>
+                            <li>Female_AverageNormal</li>
+                            <li>Female_AverageWide</li>
+                            <li>Female_AveragePointy</li>
+                            <li>Female_NarrowNormal</li>
+                            <li>Female_NarrowPointy</li>
+                            <li>Female_NarrowWide</li>
+                        </headTypes>
+                        <bodyTypes>
+                            <li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+                            <li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+                            <li>Male</li>
+                            <li>Female</li>
+                            <li>Thin</li>
+                            <li>Hulk</li>
+                            <li>Fat</li>
+                        </bodyTypes>
+                        <colorChannels></colorChannels>
+                        <bodyAddons></bodyAddons>
+                    </alienPartGenerator>
+				<graphicPaths>
+					<body>
+						<path>Things/Pawn/Humanlike/blank</path>
+					</body>
+					<head>
+						<path>Things/Pawn/Humanlike/blank</path>
+					</head>
+					<skinShader>Cutout</skinShader>
+				</graphicPaths>
+                <thoughtSettings>
+                    <cannotReceiveThoughts></cannotReceiveThoughts>
+                    <canStillReceiveThoughts></canStillReceiveThoughts>
+                </thoughtSettings>
+                <relationSettings>
+                    <renamer></renamer>
+                </relationSettings>
+                <raceRestriction>
+                    <apparelList></apparelList>
+                    <whiteApparelList></whiteApparelList>
+                    <weaponList></weaponList>
+                    <whiteWeaponList></whiteWeaponList>
+                    <buildingList></buildingList>
+                    <whiteBuildingList></whiteBuildingList>
+                    <recipeList></recipeList>
+                    <plantList></plantList>
+                    <whitePlantList></whitePlantList>
+                    <traitList></traitList>
+                    <whiteTraitList></whiteTraitList>
+                    <foodList></foodList>
+                    <petList></petList>
+                    <conceptList></conceptList>
+                    <workGiverList></workGiverList>
+                </raceRestriction>
+            </alienRace>
       <thinkTreeMain>Humanlike</thinkTreeMain>
       <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
       <intelligence>Humanlike</intelligence>
@@ -106,7 +172,7 @@
       <bloodDef>Filth_Blood</bloodDef>
       <leatherDef>Leather_Human</leatherDef>
       <nameCategory>HumanStandard</nameCategory>
-      <body>Human</body>
+      <body>RA_Body_Syrenalian</body>
       <renderTree>Humanlike</renderTree>
       <baseBodySize>1</baseBodySize>
       <baseHealthScale>1</baseHealthScale>
@@ -191,12 +257,11 @@
           <li MayRequire="Ludeon.RimWorld.Biotech">(13.999,130)</li>
           <li>(33,0)</li>
           <li MayRequire="Ludeon.RimWorld.Biotech">(14.001,130)</li>
-          <li>(50,0)</li>
-          <li>(563,500)</li>
-          <li>(1125,100)</li>
+          <li>(563,25)</li>
+          <li>(1125,50)</li>
           <li>(2250,100)</li>
-          <li>(3375,100)</li>
-          <li>(4375,50)</li>
+          <li>(3375,50)</li>
+          <li>(4375,25)</li>
           <li>(4500,0)</li>
         </points>
       </ageGenerationCurve>
