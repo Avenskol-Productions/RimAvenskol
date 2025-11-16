@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <PawnKindDef ParentName="BasePlayerPawnKind">
+
+    <PawnKindDef ParentName="BaseSyrenalPawnKind">
         <defName>RA_Syrenalian_Colonist</defName>
         <label>syrenal</label>
         <race>RA_Base_Syrenal</race>
@@ -30,7 +31,7 @@
 			</li>
 		</backstoryFilters>
     </PawnKindDef>
-	<PawnKindDef ParentName="BasePlayerPawnKind">
+	<PawnKindDef ParentName="BaseSyrenalPawnKind">
         <defName>RA_Syrenalian_Colonist_Dark</defName>
         <label>dark syrenal</label>
         <race>RA_Base_Syrenal</race>
@@ -60,7 +61,7 @@
 			</li>
 		</backstoryFilters>
     </PawnKindDef>
-	<PawnKindDef ParentName="BasePlayerPawnKind">
+	<PawnKindDef ParentName="BaseSyrenalPawnKind">
         <defName>RA_Syrenalian_Colonist_Talvix</defName>
         <label>talvix syrenal</label>
         <race>RA_Base_Syrenal</race>

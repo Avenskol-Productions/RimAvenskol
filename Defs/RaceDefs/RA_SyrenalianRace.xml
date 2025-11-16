@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <AlienRace.ThingDef_AlienRace ParentName="Human">
+    <AlienRace.ThingDef_AlienRace ParentName="BaseSyrenal">
         <defName>RA_Base_Syrenal</defName>
         <label>syrenal</label>
         <description>The base for Syrenalians</description>

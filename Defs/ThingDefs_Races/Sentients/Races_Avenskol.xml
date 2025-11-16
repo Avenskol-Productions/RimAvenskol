@@ -32,6 +32,8 @@
       <MoveSpeed>4.6</MoveSpeed>
       <ComfyTemperatureMin>-32</ComfyTemperatureMin>
       <ComfyTemperatureMax>84</ComfyTemperatureMax>
+      <ToxicResistance>1</ToxicResistance>
+      <Flammability>0.5</Flammability>
       <LeatherAmount>75</LeatherAmount>
       <RoyalFavorValue>6</RoyalFavorValue>
       <Wildness>0.75</Wildness>
@@ -80,7 +82,7 @@
         </capacities>
         <power>4.1</power>
         <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
         <chanceFactor>0.07</chanceFactor>
       </li>
       <li>
@@ -102,8 +104,6 @@
       <makesFootprints>true</makesFootprints>
       <lifeExpectancy>4500</lifeExpectancy>
       <bloodDef>Filth_Blood</bloodDef>
-      <ToxicResistance>1</ToxicResistance>
-      <Flammability>0.5</Flammability>
       <leatherDef>Leather_Human</leatherDef>
       <nameCategory>HumanStandard</nameCategory>
       <body>Human</body>
@@ -139,15 +139,15 @@
         </li>
         <li MayRequire="Ludeon.RimWorld.Biotech">
           <def>HumanlikePreTeenager</def>
-          <minAge>9</minAge>
+          <minAge>22</minAge>
         </li>
         <li>
           <def>HumanlikeTeenager</def>
-          <minAge>13</minAge>
+          <minAge>33</minAge>
         </li>
         <li>
           <def>HumanlikeAdult</def>
-          <minAge>18</minAge>
+          <minAge>50</minAge>
         </li>
       </lifeStageAges>
       <lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">
@@ -189,15 +189,15 @@
           <li MayRequire="Ludeon.RimWorld.Biotech">(13,0)</li>      
           <li MayRequire="Ludeon.RimWorld.Biotech">(13.001,122)</li><!-- End exclude -->
           <li MayRequire="Ludeon.RimWorld.Biotech">(13.999,130)</li>
-          <li>(14,0)</li>
+          <li>(33,0)</li>
           <li MayRequire="Ludeon.RimWorld.Biotech">(14.001,130)</li>
-          <li>(16,100)</li>
-          <li>(50,100)</li>
-          <li>(60,30)</li>
-          <li>(70,18)</li>
-          <li>(80,10)</li>
-          <li>(90,3)</li>
-          <li>(100,0)</li>
+          <li>(50,0)</li>
+          <li>(563,500)</li>
+          <li>(1125,100)</li>
+          <li>(2250,100)</li>
+          <li>(3375,100)</li>
+          <li>(4375,50)</li>
+          <li>(4500,0)</li>
         </points>
       </ageGenerationCurve>
       <hediffGiverSets>
