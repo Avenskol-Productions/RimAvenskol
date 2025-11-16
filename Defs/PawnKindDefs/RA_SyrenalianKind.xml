@@ -1,70 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
     <PawnKindDef ParentName="BaseSyrenalPawnKind">
         <defName>RA_Syrenalian_Colonist</defName>
         <label>syrenal</label>
-        <race>RA_Base_Syrenal</race>
-        <defaultFactionType>RA_Syrenalian_Player</defaultFactionType>
-        <apparelTags>
-			<li>IndustrialBasic</li>
-		</apparelTags>
-		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
-		<apparelMoney>350~600</apparelMoney>
-		<techHediffsChance>0.03</techHediffsChance>
-		<techHediffsMoney>50~800</techHediffsMoney>
-		<techHediffsTags>
-			<li>Poor</li>
-			<li>Simple</li>
-			<li>ImplantEmpireCommon</li>
-		</techHediffsTags>
-		<techHediffsDisallowTags>
-			<li>PainCauser</li>
-		</techHediffsDisallowTags>
-		<initialWillRange>0~1</initialWillRange>
-		<initialResistanceRange>13~21</initialResistanceRange>
-		<backstoryFilters>
-			<li>
-				<categories>
-					<li>RA_Syrnl_Council</li>
-				</categories>
-			</li>
-		</backstoryFilters>
-    </PawnKindDef>
-	<PawnKindDef ParentName="BaseSyrenalPawnKind">
-        <defName>RA_Syrenalian_Colonist_Dark</defName>
-        <label>dark syrenal</label>
-        <race>RA_Base_Syrenal</race>
-        <defaultFactionType>RA_Syrenalian_Player</defaultFactionType>
-        <apparelTags>
-			<li>IndustrialBasic</li>
-		</apparelTags>
-		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
-		<apparelMoney>350~600</apparelMoney>
-		<techHediffsChance>0.03</techHediffsChance>
-		<techHediffsMoney>50~800</techHediffsMoney>
-		<techHediffsTags>
-			<li>Poor</li>
-			<li>Simple</li>
-			<li>ImplantEmpireCommon</li>
-		</techHediffsTags>
-		<techHediffsDisallowTags>
-			<li>PainCauser</li>
-		</techHediffsDisallowTags>
-		<initialWillRange>0~1</initialWillRange>
-		<initialResistanceRange>13~21</initialResistanceRange>
-		<backstoryFilters>
-			<li>
-				<categories>
-					<li>RA_Syrnl_Council</li>
-				</categories>
-			</li>
-		</backstoryFilters>
-    </PawnKindDef>
-	<PawnKindDef ParentName="BaseSyrenalPawnKind">
-        <defName>RA_Syrenalian_Colonist_Talvix</defName>
-        <label>talvix syrenal</label>
-        <race>RA_Base_Syrenal</race>
         <defaultFactionType>RA_Syrenalian_Player</defaultFactionType>
         <apparelTags>
 			<li>IndustrialBasic</li>

@@ -9,7 +9,6 @@
   <forceLoadAfter>
     <li>Ludeon.RimWorld</li>
     <li>Ludeon.RimWorld.Royalty</li>
-	<li>erdelf.HumanoidAlienRaces</li>
     <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
   </forceLoadAfter>
   <modDependencies>
@@ -18,12 +17,6 @@
 		<displayName>Vanilla Expanded Framework</displayName>
 		<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013</steamWorkshopUrl>
 		<downloadUrl>https://github.com/Vanilla-Expanded/VanillaExpandedFramework</downloadUrl>
-	</li>
-	<li>
-		<packageId>erdelf.HumanoidAlienRaces</packageId>
-		<displayName>Humanoid Alien Races</displayName>
-		<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=839005762</steamWorkshopUrl>
-		<downloadUrl>https://github.com/erdelf/AlienRaces</downloadUrl>
 	</li>
   </modDependencies>
 </ModMetaData>
