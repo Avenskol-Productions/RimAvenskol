@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <packageId>AvenskolProductions.RimAvenskol</packageId>
+  <packageId>AvenskolProductions.RimAvenskolRaces</packageId>
   <author>Avenskol Official</author>
 <supportedVersions>
   	<li>1.6</li>
   </supportedVersions>
-  <description>The official Avenskol mod for RimWorld.</description>
+  <description>The official Avenskol race mod for RimWorld.</description>
   <forceLoadAfter>
     <li>Ludeon.RimWorld</li>
     <li>Ludeon.RimWorld.Royalty</li>
