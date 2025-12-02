@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <PawnKindDef ParentName="BaseArkaedusPawnKind">
+        <defName>RA_Arkaedus_Colonist</defName>
+        <label>arkaedus</label>
+        <defaultFactionType>RA_Voderai_Player</defaultFactionType>
+        <chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<apparelTags>
+			<li>Neolithic</li>
+		</apparelTags>
+		<apparelMoney>200~200</apparelMoney>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<techHediffsMoney>50~50</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<techHediffsChance>0.02</techHediffsChance>
+		<initialResistanceRange>9~15</initialResistanceRange>
+  </PawnKindDef>
+
+</Defs>

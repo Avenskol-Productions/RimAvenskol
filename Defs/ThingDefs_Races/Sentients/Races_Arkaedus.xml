@@ -1,42 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<!--Azkuvalian-->
-
-<!--Ashilesian-->
-
-<!--Aizalvaran-->
-
-<!--Dasdarfoxan-->
-
-<!--Doratorian-->
-
-<!--Eilsavian-->
-
-<!--Eiltaresian-->
-
-<!--Syrenalian-->
-
-	<!--Eilasalian-->
-
-	<!--Einfieran-->
-
-	<!--Mainline-->
-
-  <ThingDef Name="BaseSyrenal" Abstract="True" ParentName="BasePawn">
-    <defName>RA_Syrenalian</defName>
-    <label>syrenal</label>
-    <description>A baseline syrenal, mostly unmodified by gene engineering and mostly unchanged by evolutionary pressures on non-Syrenalian planets.</description>
+  <ThingDef ParentName="BasePawn">
+    <defName>RA_Voderai_Arkai</defName>
+    <label>arkaedus</label>
+    <description>A baseline voderai arkai, mostly unmodified by gene engineering and mostly unchanged by evolutionary pressures on non-Elder planets.</description>
     <statBases>
-      <MarketValue>3500</MarketValue>
+      <MarketValue>1750</MarketValue>
       <MoveSpeed>4.6</MoveSpeed>
-      <ComfyTemperatureMin>-32</ComfyTemperatureMin>
-      <ComfyTemperatureMax>84</ComfyTemperatureMax>
-      <ToxicResistance>1</ToxicResistance>
-      <Flammability>0.5</Flammability>
+      <ComfyTemperatureMin>-50</ComfyTemperatureMin>
+      <ComfyTemperatureMax>25</ComfyTemperatureMax>
       <LeatherAmount>75</LeatherAmount>
-      <RoyalFavorValue>6</RoyalFavorValue>
-      <Wildness>0.75</Wildness>
+      <RoyalFavorValue>3</RoyalFavorValue>
+      <Wildness>0.85</Wildness>
     </statBases>
     <tools>
       <li>
@@ -98,78 +74,13 @@
       </li>
     </tools>
     <race>
-	    <alienRace IgnoreIfNoMatchingField="True">
-                <generalSettings>
-                    <allowHumanBios>true</allowHumanBios>
-                    <corpseCategory>CorpsesHumanlike</corpseCategory>
-                </generalSettings>
-				<alienPartGenerator>
-                        <headTypes>
-                            <li>Male_AverageNormal</li>
-                            <li>Male_AverageWide</li>
-                            <li>Male_AveragePointy</li>
-                            <li>Male_NarrowNormal</li>
-                            <li>Male_NarrowPointy</li>
-                            <li>Male_NarrowWide</li>
-                            <li>Female_AverageNormal</li>
-                            <li>Female_AverageWide</li>
-                            <li>Female_AveragePointy</li>
-                            <li>Female_NarrowNormal</li>
-                            <li>Female_NarrowPointy</li>
-                            <li>Female_NarrowWide</li>
-                        </headTypes>
-                        <bodyTypes>
-                            <li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
-                            <li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
-                            <li>Male</li>
-                            <li>Female</li>
-                            <li>Thin</li>
-                            <li>Hulk</li>
-                            <li>Fat</li>
-                        </bodyTypes>
-                        <colorChannels></colorChannels>
-                        <bodyAddons></bodyAddons>
-                    </alienPartGenerator>
-				<graphicPaths>
-					<body>
-						<path>Things/Pawn/Humanlike/blank</path>
-					</body>
-					<head>
-						<path>Things/Pawn/Humanlike/blank</path>
-					</head>
-					<skinShader>Cutout</skinShader>
-				</graphicPaths>
-                <thoughtSettings>
-                    <cannotReceiveThoughts></cannotReceiveThoughts>
-                    <canStillReceiveThoughts></canStillReceiveThoughts>
-                </thoughtSettings>
-                <relationSettings>
-                    <renamer></renamer>
-                </relationSettings>
-                <raceRestriction>
-                    <apparelList></apparelList>
-                    <whiteApparelList></whiteApparelList>
-                    <weaponList></weaponList>
-                    <whiteWeaponList></whiteWeaponList>
-                    <buildingList></buildingList>
-                    <whiteBuildingList></whiteBuildingList>
-                    <recipeList></recipeList>
-                    <plantList></plantList>
-                    <whitePlantList></whitePlantList>
-                    <traitList></traitList>
-                    <whiteTraitList></whiteTraitList>
-                    <foodList></foodList>
-                    <petList></petList>
-                    <conceptList></conceptList>
-                    <workGiverList></workGiverList>
-                </raceRestriction>
-            </alienRace>
       <thinkTreeMain>Humanlike</thinkTreeMain>
       <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
       <intelligence>Humanlike</intelligence>
       <makesFootprints>true</makesFootprints>
       <lifeExpectancy>4500</lifeExpectancy>
       <bloodDef>Filth_Blood</bloodDef>
+      <bloodSmearDef>Filth_BloodSmear</bloodSmearDef>
       <leatherDef>Leather_Human</leatherDef>
       <nameCategory>HumanStandard</nameCategory>
       <body>RA_Body_Syrenalian</body>
@@ -201,19 +112,19 @@
         </li>
         <li>
           <def>HumanlikeChild</def>
-          <minAge>3</minAge>
+          <minAge>6</minAge>
         </li>
         <li MayRequire="Ludeon.RimWorld.Biotech">
           <def>HumanlikePreTeenager</def>
-          <minAge>22</minAge>
+          <minAge>44</minAge>
         </li>
         <li>
           <def>HumanlikeTeenager</def>
-          <minAge>33</minAge>
+          <minAge>66</minAge>
         </li>
         <li>
           <def>HumanlikeAdult</def>
-          <minAge>50</minAge>
+          <minAge>100</minAge>
         </li>
       </lifeStageAges>
       <lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">
@@ -255,7 +166,7 @@
           <li MayRequire="Ludeon.RimWorld.Biotech">(13,0)</li>      
           <li MayRequire="Ludeon.RimWorld.Biotech">(13.001,122)</li><!-- End exclude -->
           <li MayRequire="Ludeon.RimWorld.Biotech">(13.999,130)</li>
-          <li>(33,0)</li>
+          <li>(66,0)</li>
           <li MayRequire="Ludeon.RimWorld.Biotech">(14.001,130)</li>
           <li>(563,25)</li>
           <li>(1125,50)</li>
@@ -311,7 +222,5 @@
       </li>
     </comps>
   </ThingDef>
-
-	<!--Octusarian-->
 
 </Defs>
